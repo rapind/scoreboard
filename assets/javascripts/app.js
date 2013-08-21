@@ -1,8 +1,12 @@
 
-// Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
-  config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-    $routeProvider.otherwise({redirectTo: '/view1'});
-  }]);
+// Declare the app
+var scoreboardApp = angular.module("scoreboardApp", [ "scoreboardApp.filters", 
+                                                      "scoreboardApp.services"]);
+
+// Setup the routes
+scoreboardApp.config(function ($routeProvider) {
+  $routeProvider
+    .when("/nhl", { templateUrl: "partials/nhl.html", controller: "NHLCtrl" })
+    .when("/mlb", { templateUrl: "partials/mlb.html", controller: "MLBCtrl" })
+    .otherwise({ redirectTo: "/nhl" });
+});

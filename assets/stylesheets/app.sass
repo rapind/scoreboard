@@ -1,17 +1,25 @@
-.menu
-  list-style: none
-  border-bottom: 0.1em solid black
-  margin-bottom: 2em
-  padding: 0 0 0.5em
-  &:before
-    content: "["
-  &:after
-    content: "]"
-  > li
-    display: inline
-  > li:before
-    content: "|"
-    padding-right: 0.3em
-  > li:nth-child(1):before
-    content: ""
-    padding: 0
+.scoreboard-games
+  width: 300px
+  margin: 0 auto
+
+.scoreboard-game
+  margin: 5px 0
+  background-color: #eee
+
+.scoreboard-game-header, .scoreboard-game-body
+  padding: 5px
+
+.scoreboard-game-header
+  background-color: #ccc
+
+.scoreboard-game-line
+  overflow: auto
+
+.scoreboard-team-name
+  float: left
+  width: 80%
+
+.scoreboard-team-score
+  float: left
+  width: 20%
+  text-align: right

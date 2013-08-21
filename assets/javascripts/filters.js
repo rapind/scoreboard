@@ -1,10 +1,9 @@
-'use strict';
-
 /* Filters */
 
-angular.module('myApp.filters', []).
-  filter('interpolate', ['version', function(version) {
+angular.module("scoreboardApp.filters", []).
+  filter("byDate", ["games", function(games) {
     return function(text) {
-      return String(text).replace(/\%VERSION\%/mg, version);
+      // return games for the passed date
+      return [];
     }
   }]);

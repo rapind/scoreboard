@@ -1,0 +1,15 @@
+<div class="scoreboard-game" ng-repeat="game in games">
+  <div class="scoreboard-game-header">
+    <div class="scoreboard-game-starts-at" game-state></div>
+  </div>
+  <div class="scoreboard-game-body">
+    <div class="scoreboard-game-line">
+      <span class="scoreboard-team-name">{{game.awayTeam.name}}</span>
+      <span class="scoreboard-team-score">{{game.awayTeam.score}}</span>
+    </div>
+    <div class="scoreboard-game-line">
+      <span class="scoreboard-team-name">{{game.homeTeam.name}}</span>
+      <span class="scoreboard-team-score">{{game.homeTeam.score}}</span>
+    </div>
+  </div>
+</div>

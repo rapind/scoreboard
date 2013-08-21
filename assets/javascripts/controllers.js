@@ -1,11 +1,14 @@
-'use strict';
-
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+scoreboardApp.controller("NHLCtrl", function($scope, $filter, NHLData) {
+  NHLData.get(function(data) {
+    // $scope.games = $filter('date')(data.games);
+    $scope.games = data.games;
+  });
+});
 
-  }])
-  .controller('MyCtrl2', [function() {
-
-  }]);
+scoreboardApp.controller("MLBCtrl", function($scope, $filter, MLBData) {
+  MLBData.get(function(data) {
+    $scope.games = data.games;
+  });
+});
