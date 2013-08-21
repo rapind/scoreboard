@@ -1,3 +1,3 @@
-# Sinatra + AngularJS + Sprockets
+# Sports Scoreboard w/ AngularJS
 
-Application skeleton using Sinatra, AngularJS, and Sprockets.
+
