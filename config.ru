@@ -7,6 +7,7 @@ map '/assets' do
   environment.append_path 'assets/stylesheets'
   environment.append_path 'assets/vendor'
   run environment
+  #environment.call(env)
 end
 
 require './server'
