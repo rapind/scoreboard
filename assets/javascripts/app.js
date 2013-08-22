@@ -1,6 +1,6 @@
 
 // Declare the app
-var scoreboardApp = angular.module("scoreboardApp", [ "ngResource" ]);
+var scoreboardApp = angular.module("scoreboardApp", []);
 
 // Setup the routes
 scoreboardApp.config(function ($routeProvider) {
