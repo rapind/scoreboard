@@ -10,9 +10,9 @@ gem "thin"
 
 
 gem "yajl-ruby"
+gem "sprockets"
 
 group :assets do
-  gem "sprockets"
   gem "sass"
   gem "coffee-script"
 end
