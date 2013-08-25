@@ -1,0 +1,12 @@
+<!-- Generic score template. In reality you'll probably use different templates for most sports. -->
+<div class="scoreboard-game" ng-repeat="game in games">
+  <div class="scoreboard-game-header">
+    <div class="scoreboard-game-starts-at" scoreboard-game-state></div>
+  </div>
+  <div class="scoreboard-game-body">
+    <div class="scoreboard-game-line" ng-repeat="team in game.teams" scoreboard-game-winning>
+      <span class="scoreboard-team-name">{{team.name}}</span>
+      <span class="scoreboard-team-score">{{team.score}}</span>
+    </div>
+  </div>
+</div>
