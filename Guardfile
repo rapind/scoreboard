@@ -4,7 +4,7 @@
 guard 'sprockets', 
       destination: 'public/assets', 
       root_file: ['scoreboard.js', 'scoreboard.css'],
-      asset_paths: %w(assets/images assets/javascripts assets/stylesheets vendor/images vendor/javascripts vendor/stylesheets) do
+      asset_paths: %w(app/assets/images app/assets/javascripts app/assets/stylesheets vendor/assets/images vendor/assets/javascripts vendor/assets/stylesheets) do
   watch (%r{(assets|vendor)\/javascripts\/.*})
   watch (%r{(assets|vendor)\/stylesheets\/.*})
   watch (%r{(assets|vendor)\/images\/.*})
@@ -12,7 +12,7 @@ end
 
 guard 'livereload' do
   # App
-  watch(%r{server.rb})
+  watch(%r{app/app.rb})
 
   # Static files
   watch(%r{public\/.*})

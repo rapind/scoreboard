@@ -11,5 +11,5 @@ configure :production do
   p "Production environment loaded"
 end
 
-require './server'
+require './app/app'
 run Sinatra::Application
