@@ -1,0 +1,31 @@
+.scoreboard-games {
+  width: 300px;
+  margin: 0 auto; }
+
+.scoreboard-game {
+  margin: 5px 0;
+  background-color: #eeeeee; }
+
+.scoreboard-game-header, .scoreboard-game-body {
+  padding: 5px; }
+
+.scoreboard-game-header {
+  background-color: #cccccc; }
+
+.scoreboard-game-line {
+  overflow: auto; }
+
+.scoreboard-game-line-winning {
+  font-weight: bold; }
+
+.scoreboard-team-name {
+  float: left;
+  width: 80%; }
+
+.scoreboard-team-score {
+  float: left;
+  width: 20%;
+  text-align: right; }
+/*
+
+*/

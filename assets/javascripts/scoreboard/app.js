@@ -1,4 +1,4 @@
-
+ 
 // Declare the app
 var scoreboardApp = angular.module("scoreboardApp", []);
 
