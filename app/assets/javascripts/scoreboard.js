@@ -1,6 +1,5 @@
 /*
- *= require angular/angular
- *= require angular/angular-resource
+ *= require angular/angular.min
  *= require_self
  *= require_tree .
 */

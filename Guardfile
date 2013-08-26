@@ -3,6 +3,7 @@
 
 guard 'sprockets', 
       destination: 'public/assets', 
+      minify: { mangle: false },
       root_file: ['scoreboard.js', 'scoreboard.css'],
       asset_paths: %w(app/assets/images app/assets/javascripts app/assets/stylesheets vendor/assets/images vendor/assets/javascripts vendor/assets/stylesheets) do
   watch (%r{(assets|vendor)\/javascripts\/.*})

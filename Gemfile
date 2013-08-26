@@ -9,7 +9,7 @@ group :development do
   gem "sass"
   gem "coffee-script"
   gem "uglifier"
-  gem "guard-sprockets"
+  gem "guard-sprockets", git: "https://github.com/rapind/guard-sprockets.git"
   gem "guard-livereload"
   gem "capistrano"
 end
