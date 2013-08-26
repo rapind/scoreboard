@@ -1,6 +1,15 @@
 #\ -p 3000
+Bundler.require
 
-use Rack::Deflater
+configure :development do
+  use Rack::LiveReload
+  p "Development environment loaded"
+end
+
+configure :production do
+  use Rack::Deflater
+  p "Production environment loaded"
+end
 
 require './server'
 run Sinatra::Application

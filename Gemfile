@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem "sinatra"
 gem "thin"
+gem "rack-livereload"
 
 group :development do
   gem "sprockets"
