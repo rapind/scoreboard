@@ -1,7 +1,6 @@
 # Sports Scoreboard w/ AngularJS
 
-## To run it
-
+To run it:
 ```
 git clone https://github.com/rapind/scoreboard.git
 cd scoreboard
